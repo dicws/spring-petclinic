@@ -1,6 +1,5 @@
 # ---- Build stage ----
-FROM eclipse-temurin:17-jdk-jammy AS
-builder
+FROM eclipse-temurin:17-jdk-jammy AS builder
 WORKDIR /app
 COPY . .
 RUN chmod +x mvnw && ./mvnw clean
