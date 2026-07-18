@@ -17,7 +17,7 @@ spec:
       - name: regcred         # 👈 이 줄 추가    
       containers:
       - name: petclinic
-        image: 450444046629.dkr.ecr.ca-central-1.amazonaws.com/user21-cluster:v1
+        image: 450444046629.dkr.ecr.ca-central-1.amazonaws.com/user21-petclinic:v5
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
