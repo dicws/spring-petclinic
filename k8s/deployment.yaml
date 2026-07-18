@@ -13,6 +13,8 @@ spec:
       labels:
         app: petclinic
     spec:
+      imagePullSecrets:       # 👈 이 줄 추가
+      - name: regcred         # 👈 이 줄 추가    
       containers:
       - name: petclinic
         image: 450444046629.dkr.ecr.ca-central-1.amazonaws.com/user21-cluster:v1
